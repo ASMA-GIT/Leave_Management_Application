@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="empsignup.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <div class="bg">
+        <img src="images/formbg.png" alt="">
+    </div>
+
+    <div class="container">
+        <div class="row main-div mx-auto d-flex justify-content-center align-items-center ">
+            <div class="col-12 cold-md-8 col-xxl-5 ">
+                <div class="card py-2 px-2 ">
+                    
+                    <span class="text-center title">Employee Sign-Up</span>
+                    <!-- <h4 class="text-center fs-5">Hey! Enter your user ID and password to sign in to your account</h4> -->
+                    <!-- <small id="emailHelp" class="form-text text-muted">Hey! Enter your user ID and password to sign in to your account</small><br> -->
+                    
+                    <div class="userlogform w-75 mx-auto my-4">
+                        <form method="post" id="form">
+
+                            <div class="row mt-3 mb-0">
+                                <div class="col m-0 py-0">
+                                    <label for="first_name" class="label">First name *</label>
+                                  <input type="text" class="form-control mt-1 fw-bold" id="first_name" autocomplete="off"
+                                  name="first_name" placeholder="First name" style="font-weight: bold; font-size: small;" required>
+                                </div>
+                                <div class="col py-0">
+                                    <label for="last_name" class="label ">Last name *</label>
+                                  <input type="text" class="form-control mt-1 fw-bold" name="last_name" id="last_name" placeholder="Last name" autocomplete="off" style="font-weight: bold; font-size: small;" required>
+                                </div>
+                                <div class="col py-0">
+                                    <label for="exampleInputEmail1" class="label">Gender *</label>
+                                        <select name="gender_id" id="gender_id" class="form-control field mt-1" name="gender_id" autocomplete="off" style="font-weight: bold; font-size: small;" required>
+                                            <option>Choose.. </option>
+                                            <option value="21">Female</option>
+                                            <option value="22">Male</option>
+                                            <option value="23">Other</option>
+                                        </select><br>
+                                </div> 
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="emp_mail" class="label">Employee Email *</label>
+                                <input type="email" autocomplete="off" name="emp_mail" id="emp_mail"  required class="input form-control mt-1"  autocomplete="off" name="emp_id" aria-describedby="emailHelp" placeholder="Email" style="font-weight: bold; font-size: small; ">
+                              </div>
+                              
+
+                              <div class="row my-3">
+                                <div class=" col-md-4">
+                                  <label for="designation" class="label">Designation *</label>
+                                  <input type="text" class="form-control input mt-1" name="designation" id="designation" placeholder="Designation" autocomplete="off" style="font-weight: bold; font-size: small;" required>
+                                </div>
+                                <div class="form-group col-md-4">
+                                  <label for="dept_id" class="label">Department *</label>
+                                  <select  name="dept_id" id="dept_id" class="form-control mt-1" style="font-weight: bold; font-size: small;" required>
+                                    <option selected>Choose...</option>
+                                    <option value="11">finance</option>
+                                    <option value="12">HR</option>
+                                    <option value="13">Admin</option>
+                                    <option value="14">IT Services</option>
+                                    <option value="15">Product development</option>
+                                    <option value="16">sales and marketing</option>
+                                    <option value="17">other</option>
+                                  </select>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="dob" class="label">DOB *</label>
+                                    <input type="date" name="dob" id="dob" class="form-control mt-1"  style="font-weight: bold; font-size: small;" required>
+                                  </div>
+                                </div>
+
+                            <div class="row my-3 mt-4">
+                                <div class="col mt-0">
+                                    <label for="emp_id" class="label">Employee ID *</label>
+                                    <input type="number" autocomplete="off" name="emp_id" id="emp_id" required class="input form-control mt-1"  name="emp_id" aria-describedby="emailHelp" placeholder="Employee ID" style="font-weight: bold; font-size: small; ">
+                                  </div>
+
+                                  <div class="col mb-0">
+                                    <label for="joining_date" class="label">Joining Date *</label>
+                                    <input type="date" class="input form-control mt-1 " name="joining_date" id="joining_date"   style="font-weight: bold; font-size: small; ">
+                                  </div>
+                                  
+                            </div>
+
+
+                            <div class="row">
+
+                                  <div class="col mb-0">
+                                    <label for="password" class="label">Password *</label>
+                                    <input type="password" name="password" id="passcode"  class="input form-control mt-1 "  placeholder="Password" maxlength="12"  name="password" style="font-weight: bold; font-size: small; ">
+                                  </div>
+                                  
+                            </div>
+
+
+
+                            <button type="submit" class="btn fw-bold btn-primary mt-4 float-end border-0 " style="color: #2E3089;" id="fetchdata">Submit</button>
+                        </form>
+                    </div>
+                    
+
+                </div>
+                
+            </div>
+        </div>
+    </div> 
+
+
+
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    <script src="empsignup.js"></script>
+  </body>
+</html>

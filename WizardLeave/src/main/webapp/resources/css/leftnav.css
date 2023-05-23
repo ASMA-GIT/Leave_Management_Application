@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+}
+body{
+
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/formbg.png);
+    background-position: center;
+    background-size: cover;
+}
+.side-nav{
+    position: absolute;
+    top:0;
+    bottom:0;
+    height: 100%;
+    left:5px;
+    width: 75px;
+    /* overflow: hidden; */
+    transition:width 0.2s linear ;
+    /* box-shadow: 5px 10px 18px #ffd8d8; */
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    /* background-color: #6567d8; */
+}
+.head{
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 10px 0 0 0px;
+}
+.head img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.head span{
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+li a{
+    position: relative;
+    color: #2E3089;
+    font-size: 17px;
+    display: table;
+    width: 227px;
+    padding: 3px;
+    border-radius: 10px;
+    margin:2px 0px;
+}
+.fas{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 12px;
+    font-size: 18px;
+    text-align: center;
+}
+.nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+.side-nav ul li a:hover{
+    background-color: #6567d8;
+    font-weight: 600;
+    color: #fff;
+}
+a.head:hover{
+    background: none;
+    color:#2E3089
+}
+/* nav:hover{
+    width: 210px;
+    transition: all 0.5s ease;
+} */
+.logout{
+    position: absolute;
+    bottom: 0;
+}
+.line{
+    /* width: 225px;
+    color: #2E3089; */
+    display: none;
+}
+.right{
+    margin-left: 240px;
+    background: #fff;
+    width: calc(100% - 240px);
+    height: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow:4px 0px 6px 6px #ebbccb;
+
+}
+nav:hover .right{
+    margin-left: 270px;
+    width: calc(100% - 280px);
+}
+.btn{
+    background: linear-gradient(#ebbccb,#e3e4ff);
+}
+.form-control:focus {
+    border-color: #ffd8d8;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px #ffd8d8;
+}
+.right{
+    padding: 15px 0px;
+  }
+  .titleheading{
+    padding: 5px 20px;
+    font-weight: 1100;
+    box-shadow: 0 3px 2px #f5f5f5;
+  }
+  .titleheading h2{
+    font-size: 1.2em;
+    font-weight: 900;
+    color: #2E3089;
+  }

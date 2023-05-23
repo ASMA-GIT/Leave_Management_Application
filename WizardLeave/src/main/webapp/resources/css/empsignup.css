@@ -1,0 +1,55 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+.bg{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    z-index: -1;
+}
+.bg img{
+    width: 100%;
+    height: 100%;
+}
+.card{
+    border: none;
+    border-top: 5px solid #ffd8d8;
+    box-shadow: 
+    inset 0px 11px 8px -10px #ffd8d8,
+    inset 0px -11px 8px -10px #ffd8d8; 
+}
+.cont{
+    align-items: center;
+    justify-content: center;
+}
+.main-div{
+    height: 100vh;
+    width: 70%;
+}
+.formfields{
+    margin: auto;
+    background-color: aliceblue;
+}
+.label{
+    color: rgb(167, 167, 167);
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.title{
+    color: #2E3089;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.btn{
+    background: linear-gradient(#ebbccb,#e3e4ff);
+}
+.form-control:focus {
+    border-color: #ffd8d8;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px #ffd8d8;
+}

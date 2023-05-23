@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="resources/css/leftnav.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="resources/css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    
+</head>
+<body>
+
+    
+    <div class="side-nav p-0">
+        <ul class="p-0 ">
+            <li class="breadcrumb-item active" aria-current="page">
+                <a href="#" class="head text-decoration-none ">
+                    <img src="images/star.png" alt="" class="">
+                    <!-- <i class="fas fa-star"></i> -->
+                    <span class="nav-item pt-1 ">Leave Wizard</span>
+                </a>
+            </li>
+            <hr class="line ">
+            
+            
+            <li class="breadcrumb-item active" aria-current="page"><a href="dashboard.html" class="text-decoration-none mt-4"> 
+                <i class="fas fa-home"></i>
+                <span class="nav-item fw-bold">DashBoard</span>
+            </a></li>
+            <li><a href="profile.html" class="text-decoration-none">
+                <i class="fas fa-user"></i>
+                <span class="nav-item">Profile</span>
+            </a></li>
+            <li><a href="history.html" class="text-decoration-none">
+                <i class="fas fa-history"></i>
+                <span class="nav-item">History </span>
+            </a></li>
+            <li><a href="apply.html" class="text-decoration-none">
+                <i class="fas fa-message"></i>
+                <span class="nav-item">Apply Leave</span>
+            </a></li>
+           
+            <li><a href="index.html" class="logout text-decoration-none">
+                
+                <i class="fas fa-sign-out"></i>
+                <span class="nav-item">Logout</span>
+            </a></li>
+        </ul>
+    </div>
+    <div class="right">
+        <div class="titleheading mb-3"><h2 class="">Dashboard</h2></div>
+        <!-- <div class="first w-100 px-5 d-flex align-items-center">
+            <div class="profileimg rounded-circle mx-4"><img src="images/user.png" alt="" class=""></div>
+            <div>
+                <p class=" fw-bold name d-flex align-content-center justify-content-center pb-0 mb-0 " > Asma Shaheen</p>
+                <p class="py-0 my-0 desig">Intern</p>
+             </div>
+            <div> </div>
+        </div> -->
+        <div class="first w-100 px-5 d-flex ">
+            <div>
+                <p class=" fw-bold name d-flex   pb-0 mb-2 " >Welcome,&nbsp <span id="name"> </span></p>
+                <p class="py-0 my-0 desig text-black-50">Track your Leaves easily andet your Leave Insights here</p>
+             </div>
+
+        </div>
+        <div class="second d-md-flex my-5 flex-row justify-content-around">
+            <div class="holleave d-flex flex-column  justify-content-between">
+
+                <div class="leavecount d-flex justify-content-between ">
+                    <div class="comp">
+                        <span id="compensatory" class="fs-1">2</span><span class="fs-6" >/24</span> 
+                        <p class=" leavetitle">Compensatory</p>
+    
+                    </div>
+                    <div class="loss">
+                        <span id="lossofpay" class="fs-1">2</span> <span class="fs-6">/24</span>
+                        <p class="leavetitle">Loss of Pay</p>
+                    </div>
+                    <div class="personal">
+                        <span id="personaltimeoff" class="fs-1">2</span> <span class="fs-6">/24</span>
+                        <p class=" leavetitle">Personaltimeoff</p>
+                    </div>
+                </div>
+                <div class="upcoming">
+                    <div class="graph mt-4 text-center " >
+                        <canvas id="canvas"></canvas>
+                        <!-- <h6 class="fw-bold">Ratio of Leaves taken</h6> -->
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="third ">
+                <div class="calender">
+                    <header>
+                        <p class="current-date"> </p>
+                        
+                        <div class="icons">
+                          <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                          <span id="next" class="material-symbols-rounded">chevron_right</span>
+                        </div>
+                      </header>
+                      <div class="calendar mt-0 ">
+                        <ul class="weeks p-0">
+                          <li>Sun</li>
+                          <li>Mon</li>
+                          <li>Tue</li>
+                          <li>Wed</li>
+                          <li>Thu</li>
+                          <li>Fri</li>
+                          <li>Sat</li>
+                        </ul>
+                        <ul class="days p-0 mt-0"></ul>
+                      </div>
+    
+                </div>
+            </div>
+        </div>
+            
+
+        </div>
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="resources/css/dscript.js" ></script>
+</body>
+</html>

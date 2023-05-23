@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+*{
+    font-family: 'Inter', sans-serif;
+}
+.leavehistory{
+    border-collapse: collapse;
+    margin: auto;
+    font-size: 0.9em;
+    border-radius: 15px;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    font-weight: 700;
+}
+.tablescrollable{
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+    height: 70vh;
+    overflow: auto;
+}
+
+.tablescrollable thead{
+    background-color: #fef2f6;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.search{
+    width: 90%;
+    margin: auto;
+}
+table{
+    border-collapse: collapse;
+}
+tbody{
+    font-weight: 600;
+}
+.tablescrollable::-webkit-scrollbar{
+    width: 4px;
+}
+.tablescrollable::-webkit-scrollbar-thumb{
+    background: #bababa; 
+    border-radius: 5px;
+}
+.theading{
+    color:#726d6d;
+
+    font-weight: 900;
+    border-radius: 10px;
+}
+.theading th{
+    padding: 15px;
+    
+}
+.leaveapply th,
+.leavehistory td{
+    padding: 12px 15px;
+}
+
+.leavehistory tbody tr{
+    border-bottom: 1.5px solid #f6f3f3;
+}
+/* .leavehistory tbody tr:nth-of-type(even){
+    background-color: #f9f8f8;
+} */
+.leavehistory tbody tr:last-of-type{
+    border-bottom :2px solid #f1d5de;
+}
